@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <!-- Vinculamos los estilos generales -->
-    <link rel="stylesheet" href="css/reloj.css">
-    <link rel="stylesheet" href="css/contrasena.css">
-    <link rel="stylesheet" href="css/links.css">
-    <link rel="stylesheet" href="css/el tiempo.css">
+    <title>Dashboard de Ejercicios</title>
+    <link rel="stylesheet" href="css/paratodos.css"> <!-- CSS común -->
+    <script defer src="js/reloj.js"></script>  <!-- JavaScript del reloj -->
+    <script defer src="js/contrasena.js"></script>  <!-- JavaScript del generador de contraseñas -->
+    <script defer src="js/links.js"></script>  <!-- JavaScript de los links -->
+    <script src="eltiempo.js"></script>
+
 </head>
 <body>
-    <!-- Contenedor principal -->
-    <div class="dashboard">
-        <!-- Reloj digital -->
-        <div class="reloj">
-            <iframe src="ejercicios/reloj.html" frameborder="0"></iframe>
-        </div>
-        <!-- Generador de contraseñas -->
-        <div class="contrasena">
-            <iframe src="ejercicios/contrasena.html" frameborder="0"></iframe>
-        </div>
-        <!-- Listado de Links -->
-        <div class="links">
-            <iframe src="ejercicios/links.html" frameborder="0"></iframe>
-        </div>
-        <!-- Estación meteorológica -->
-        <div class="meteo">
-            <iframe src="ejercicios/eltiempo.html" frameborder="0"></iframe>
-        </div>
+
+    <!-- Ejercicio del Reloj -->
+    <div class="ejercicio">
+        <h2>Reloj Digital</h2>
+        <div id="reloj" class="reloj"></div> <!-- Aquí se mostrará el reloj -->
+        <div id="mensaje" class="mensaje"></div> <!-- Aquí se mostrará el mensaje -->
+        <div id="fecha" class="fecha"></div> <!-- Aquí se mostrará la fecha -->
     </div>
 
-    <!-- Enlazamos los scripts JS de cada ejercicio -->
-    <script src="js/reloj.js"></script>
-    <script src="js/contrasena.js"></script>
-    <script src="js/links.js"></script>
-    <script src="js/eltiempo.js"></script>
+    <!-- Ejercicio del Generador de Contraseñas -->
+    <div class="ejercicio">
+        <h2>Generador de Contraseñas</h2>
+        <input type="number" id="longitud" class="contrasena-input" placeholder="Longitud de la contraseña" min="4" max="20">
+        <button id="generar" class="contrasena-btn">Generar</button>
+        <div id="resultado" class="contrasena-output"></div>
+    </div>
+
+    <!-- Ejercicio de Links Interesantes -->
+    <div class="ejercicio">
+        <h2>Links Interesantes</h2>
+        <input type="text" id="titulo" class="links-input" placeholder="Título del link">
+        <input type="url" id="url" class="links-input" placeholder="URL del link">
+        <button id="agregar-link" class="links-btn">Añadir Link</button>
+        <ul id="lista-links" class="links-list"></ul>
+    </div>
+
+    <!-- Ejercicio de Estación Meteorológica -->
+    <div class="ejercicio">
+        <h2>Estación Meteorológica</h2>
+        <div id="climaActual"></div> <!-- Aquí se mostrará el clima actual -->
+        <ul id="previsionClima"></ul>  <!-- Aquí se mostrará la previsión por horas -->
+
+    </div>
+
 </body>
 </html>
+
 

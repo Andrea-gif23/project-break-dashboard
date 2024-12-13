@@ -1,23 +1,184 @@
+/* Estilo general para todo el cuerpo */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    background-image: url('https://cdn.pixabay.com/photo/2021/11/19/15/21/christmas-6809681_1280.png'); /* Imagen de ejemplo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.container {
-    width: 100%;
-    max-width: 1000px;
+/* Fondo con imagen aleatoria */
+body {
+    background-image: url('https://source.unsplash.com/1600x900/?nature,landscape'); /* Imagen aleatoria de Unsplash */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Contenedor de los ejercicios */
+.ejercicio {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    margin: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Reloj */
+.reloj {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilos para el mensaje */
+.mensaje {
+    font-size: 18px;
+    text-align: center;
+    color: #ffff;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* Estilo para la fecha */
+.fecha {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Estilos para el generador de contraseñas */
+.contrasena-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contrasena-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contrasena-btn:hover {
+    background-color: #45a049;
+}
+
+.contrasena-output {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Estilos para el generador de links */
+.links-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.links-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links-btn:hover {
+    background-color: #45a049;
+}
+
+.links-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-list li {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Estilo general de la estación meteorológica */
+#climaActual, #previsionClima {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo de la ciudad y el país */
+#climaActual h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo para los datos actuales */
+.datos-actuales {
+    display: flex;
+    align-items: center;
+}
+
+.grados-actuales {
+    margin-right: 20px;
+}
+
+.icono-clima {
+    width: 50px;
+    height: 50px;
+}
+
+/* Lista de datos como precipitaciones, viento, humedad */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Estilo de la previsión por horas */
+#previsionClima li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#previsionClima img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
