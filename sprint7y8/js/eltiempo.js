@@ -1,6 +1,6 @@
 // Función para obtener la información del clima
 async function obtenerClima(ciudad) {
-    const apiKey = 'd63d4edc1c614b938ea81113230112'; // Reemplaza con tu clave de API de WeatherAPI
+    const apiKey = '2e5e4d18448748a79b5162954241312'; // Reemplaza con tu clave de API de WeatherAPI
     const urlClima = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${ciudad}&aqi=no`;
 
     try {

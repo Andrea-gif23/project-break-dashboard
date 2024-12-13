@@ -8,45 +8,38 @@
     <script defer src="js/reloj.js"></script>  <!-- JavaScript del reloj -->
     <script defer src="js/contrasena.js"></script>  <!-- JavaScript del generador de contraseñas -->
     <script defer src="js/links.js"></script>  <!-- JavaScript de los links -->
-    <script src="eltiempo.js"></script>
+    <script src="js/eltiempo.js"></script>
+
 
 </head>
-<body>
-
-    <!-- Ejercicio del Reloj -->
+<div class="ejercicios-container">
     <div class="ejercicio">
-        <h2>Reloj Digital</h2>
-        <div id="reloj" class="reloj"></div> <!-- Aquí se mostrará el reloj -->
-        <div id="mensaje" class="mensaje"></div> <!-- Aquí se mostrará el mensaje -->
-        <div id="fecha" class="fecha"></div> <!-- Aquí se mostrará la fecha -->
+        <!-- Reloj y mensaje en el mismo ejercicio -->
+        <h2>Reloj y Mensaje</h2>
+        <div class="reloj" id="reloj"></div>
+        <p class="fecha" id="fecha"></p>
+        <p class="mensaje" id="mensaje"></p>
     </div>
-
-    <!-- Ejercicio del Generador de Contraseñas -->
     <div class="ejercicio">
+        <!-- Generador de Contraseñas -->
         <h2>Generador de Contraseñas</h2>
-        <input type="number" id="longitud" class="contrasena-input" placeholder="Longitud de la contraseña" min="4" max="20">
-        <button id="generar" class="contrasena-btn">Generar</button>
-        <div id="resultado" class="contrasena-output"></div>
+        <input class="contrasena-input" id="input-contrasena" type="text" placeholder="Generar contraseña">
+        <button class="contrasena-btn" id="boton-contrasena">Generar</button>
+        <p class="contrasena-output" id="output-contrasena"></p>
     </div>
-
-    <!-- Ejercicio de Links Interesantes -->
     <div class="ejercicio">
-        <h2>Links Interesantes</h2>
-        <input type="text" id="titulo" class="links-input" placeholder="Título del link">
-        <input type="url" id="url" class="links-input" placeholder="URL del link">
-        <button id="agregar-link" class="links-btn">Añadir Link</button>
-        <ul id="lista-links" class="links-list"></ul>
+        <!-- Generador de Links -->
+        <h2>Generador de Links</h2>
+        <input class="links-input" id="input-links" type="text" placeholder="Añadir link">
+        <button class="links-btn" id="boton-links">Añadir</button>
+        <ul class="links-list" id="lista-links"></ul>
     </div>
-
-    <!-- Ejercicio de Estación Meteorológica -->
     <div class="ejercicio">
+        <!-- Estación Meteorológica -->
         <h2>Estación Meteorológica</h2>
-        <div id="climaActual"></div> <!-- Aquí se mostrará el clima actual -->
-        <ul id="previsionClima"></ul>  <!-- Aquí se mostrará la previsión por horas -->
-
+        <div id="climaActual"></div>
+        <ul id="previsionClima"></ul>
     </div>
+</div>
 
-</body>
 </html>
-
-

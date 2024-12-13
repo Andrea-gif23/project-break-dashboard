@@ -1,7 +1,6 @@
-/* Estilo general para todo el cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,14 +8,21 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-}
-
-/* Fondo con imagen aleatoria */
-body {
-    background-image: url('https://source.unsplash.com/1600x900/?nature,landscape'); /* Imagen aleatoria de Unsplash */
     background-size: cover;
     background-position: center;
-    color: white;
+    transition: background 1s ease;
+}
+
+/* Fondo con cambio automático de imagen */
+@keyframes cambioFondo {
+    0% { background-image: url('img/fondo1.jpg'); }
+    33% { background-image: url('img/fondo2.jpg'); }
+    66% { background-image: url('img/fondo3.jpg'); }
+    100% { background-image: url('img/fondo4.jpg'); }
+}
+
+body {
+    animation: cambioFondo 12s infinite; /* Cambia cada 3 segundos, con duración total de 12s */
 }
 
 /* Contenedor de los ejercicios */
@@ -29,6 +35,7 @@ body {
     max-width: 800px;
 }
 
+/* Títulos */
 h2 {
     text-align: center;
     font-size: 24px;
@@ -50,7 +57,6 @@ h2 {
     margin-top: 20px;
     padding: 10px;
 }
-
 
 /* Estilo para la fecha */
 .fecha {
