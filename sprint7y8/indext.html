@@ -12,7 +12,7 @@
 
 
 </head>
-<div class="ejercicios-container">
+<div class="main-container">
     <div class="ejercicio">
         <!-- Reloj y mensaje en el mismo ejercicio -->
         <h2>Reloj y Mensaje</h2>
@@ -20,20 +20,22 @@
         <p class="fecha" id="fecha"></p>
         <p class="mensaje" id="mensaje"></p>
     </div>
+    <!-- Generador de contraseña -->
     <div class="ejercicio">
-        <!-- Generador de Contraseñas -->
         <h2>Generador de Contraseñas</h2>
-        <input class="contrasena-input" id="input-contrasena" type="text" placeholder="Generar contraseña">
-        <button class="contrasena-btn" id="boton-contrasena">Generar</button>
-        <p class="contrasena-output" id="output-contrasena"></p>
+        <input id="longitud" type="number" placeholder="Longitud de la contraseña" min="4" max="20" class="contrasena-input">
+        <button id="generar" class="contrasena-btn">Generar</button>
+        <p id="resultado" class="contrasena-output"></p>
     </div>
+<!-- Generador de links -->
     <div class="ejercicio">
-        <!-- Generador de Links -->
-        <h2>Generador de Links</h2>
-        <input class="links-input" id="input-links" type="text" placeholder="Añadir link">
-        <button class="links-btn" id="boton-links">Añadir</button>
-        <ul class="links-list" id="lista-links"></ul>
+        <h2>Links Interesantes</h2>
+        <input id="nombre" type="text" placeholder="Nombre del Link" class="links-input">
+        <input id="url" type="text" placeholder="URL del Link" class="links-input">
+        <button id="agregar" class="links-btn">Agregar</button>
+        <ul id="lista" class="links-list"></ul>
     </div>
+    
     <div class="ejercicio">
         <!-- Estación Meteorológica -->
         <h2>Estación Meteorológica</h2>
