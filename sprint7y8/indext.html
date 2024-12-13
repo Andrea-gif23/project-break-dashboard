@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="css/paratodos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Vinculamos los estilos generales -->
+    <link rel="stylesheet" href="css/reloj.css">
+    <link rel="stylesheet" href="css/contrasena.css">
+    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/el tiempo.css">
 </head>
 <body>
-  <header>
-    <h1>Dashboard</h1>
-  </header>
-  <main>
-    <nav>
-      <ul>
-        <li><a href="ejercicios/reloj.html">Reloj Digital</a></li>
-        <li><a href="ejercicios/generadordecontrasenas.html">Generador de Contraseñas</a></li>
-        <li><a href="ejercicios/links.html">Links interesantes</a></li>
-        <li><a href="ejercicios/eltiempo.html">El tiempo</a></li>
-      </ul>
-    </nav>
-  </main>
-  <footer>
-    <p>Intento de ejercicio - Project Break 1</p>
-  </footer>
+    <!-- Contenedor principal -->
+    <div class="dashboard">
+        <!-- Reloj digital -->
+        <div class="reloj">
+            <iframe src="ejercicios/reloj.html" frameborder="0"></iframe>
+        </div>
+        <!-- Generador de contraseñas -->
+        <div class="contrasena">
+            <iframe src="ejercicios/contrasena.html" frameborder="0"></iframe>
+        </div>
+        <!-- Listado de Links -->
+        <div class="links">
+            <iframe src="ejercicios/links.html" frameborder="0"></iframe>
+        </div>
+        <!-- Estación meteorológica -->
+        <div class="meteo">
+            <iframe src="ejercicios/eltiempo.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Enlazamos los scripts JS de cada ejercicio -->
+    <script src="js/reloj.js"></script>
+    <script src="js/contrasena.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/eltiempo.js"></script>
 </body>
 </html>
+

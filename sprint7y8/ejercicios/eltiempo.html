@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estación Meteorológica</title>
+    <link rel="stylesheet" href="../css/eltiempo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Estación Meteorológica</h1>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" placeholder="Ciudad">
+        <button id="obtener-clima">Obtener Clima</button>
+        
+        <div id="info-clima">
+            <h2 id="ciudad-pais"></h2>
+            <p id="estado-clima"></p>
+            <p id="temperatura"></p>
+            <p id="precipitacion"></p>
+            <p id="humedad"></p>
+            <p id="viento"></p>
+            <h3>Previsión Horaria:</h3>
+            <ul id="prevision"></ul>
+        </div>
+    </div>
+    <script src="../js/eltiempo.js"></script>
+</body>
+</html>
+

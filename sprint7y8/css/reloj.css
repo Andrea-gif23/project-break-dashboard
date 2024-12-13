@@ -1,38 +1,38 @@
-/* Estilos para el reloj digital */
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  #reloj {
-    background-color: #34495e;
-    color: white;
-    padding: 20px;
+}
+
+.reloj-container {
+    background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  #hora {
+}
+
+.reloj {
+    font-size: 2em;
+}
+
+#hora {
     font-size: 3em;
     font-weight: bold;
-  }
-  
-  #fecha {
+}
+
+#fecha {
     font-size: 1.2em;
     margin-top: 10px;
-  }
-  
-  #mensaje {
-    font-size: 1.2em;
-    margin-top: 10px;
-    font-style: italic;
-    color: #ecf0f1;
-  }
+}
+
+#frase {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
   
