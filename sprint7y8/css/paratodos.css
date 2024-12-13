@@ -114,11 +114,10 @@ body {
 
 /* Estilos para el generador de links */
 .links-input {
-    width: 100%;
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio horizontalmente */
     padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    border-radius: 5px;
+    height: 100%; 
     border: 1px solid #ccc;
 }
 
