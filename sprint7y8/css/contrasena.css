@@ -1,58 +1,45 @@
-/* contrasena.css */
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
-.container {
-  background-color: white;
-  padding: 20px;
+#password-generator {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 300px;
 }
 
-h1 {
-  font-size: 24px;
+#password-generator h2 {
+  font-size: 2em;
+  color: #4CAF50;
   margin-bottom: 20px;
 }
 
-label, input {
-  font-size: 16px;
+#password-generator input,
+#password-generator button {
+  padding: 12px;
+  font-size: 1.2em;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
 }
 
-input {
-  padding: 8px;
-  width: 60%;
-  margin: 10px 0;
-}
-
-button {
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: #007bff;
+#password-generator button {
+  background-color: #5cb85c;
   color: white;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
+#password-generator input {
+  width: 80%;
+  margin-bottom: 20px;
 }
-
-#resultado {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-  
-  

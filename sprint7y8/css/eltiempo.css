@@ -1,70 +1,64 @@
-/* eltiempo.css */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-.container {
-    background-color: white;
+#weather-info {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 24px;
+#weather-info img {
+    width: 120px;
+    height: 120px;
     margin-bottom: 20px;
 }
 
-label, input {
-    font-size: 16px;
+#weather-info h2 {
+    color: #4CAF50;
+    font-size: 2em;
 }
 
-input {
-    padding: 8px;
-    width: 100%;
+#weather-info p {
+    font-size: 1.2em;
     margin: 10px 0;
 }
 
-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-button:hover {
-    background-color: #0056b3;
+#forecast div {
+    background-color: #e7e7e7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    text-align: center;
 }
 
-#info-clima {
-    margin-top: 20px;
-    text-align: left;
+#forecast div img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #f8f8f8;
-    padding: 8px;
+#forecast div p {
     margin: 5px 0;
-    border-radius: 5px;
+    font-size: 1em;
 }
 
-ul li p {
-    margin: 0;
-}

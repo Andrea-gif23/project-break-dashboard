@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Links interesantes</title>
-  <link rel="stylesheet" href="../css/paratodos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Links</title>
+    <link rel="stylesheet" href="../css/links.css">
 </head>
 <body>
-  <ul>
-    <li><a href="https://www.google.com" target="_blank">Google</a></li>
-    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
-  </ul>
+    <div class="container">
+        <h1>Listado de Links</h1>
+        <label for="titulo">Título del Link:</label>
+        <input type="text" id="titulo" placeholder="Título del link">
+        <label for="url">URL del Link:</label>
+        <input type="url" id="url" placeholder="URL del link">
+        <button id="agregar">Añadir Link</button>
+        
+        <ul id="lista-links"></ul>
+    </div>
+    <script src="../js/links.js"></script>
 </body>
 </html>
+

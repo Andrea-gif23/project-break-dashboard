@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="../css/eltiempo.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Estación Meteorológica</h1>
-        <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad" placeholder="Ciudad">
-        <button id="obtener-clima">Obtener Clima</button>
-        
-        <div id="info-clima">
-            <h2 id="ciudad-pais"></h2>
-            <p id="estado-clima"></p>
-            <p id="temperatura"></p>
-            <p id="precipitacion"></p>
-            <p id="humedad"></p>
-            <p id="viento"></p>
-            <h3>Previsión Horaria:</h3>
-            <ul id="prevision"></ul>
-        </div>
+    <h1>Estación Meteorológica</h1>
+    <div id="weather-info">
+        <p><strong>Ciudad:</strong> <span id="city-name"></span>, <span id="country-name"></span></p>
+        <p><strong>Estado del clima:</strong> <span id="weather-condition"></span></p>
+        <p><strong>Temperatura:</strong> <span id="temperature"></span>°C</p>
+        <p><strong>Humedad:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Viento:</strong> <span id="wind"></span> km/h</p>
+        <p><strong>Precipitación:</strong> <span id="precipitation"></span> mm</p>
+        <h3>Previsión por horas</h3>
+        <div id="forecast"></div>
     </div>
+
     <script src="../js/eltiempo.js"></script>
 </body>
 </html>
+
 
