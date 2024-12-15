@@ -1,4 +1,4 @@
-/* Estilo general del body con cambio de fondo dinámico */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,16 +8,15 @@ body {
     align-items: center;
     min-height: 100vh;
 
-    /* Fondo dinámico */
-    background-size: cover; /* Asegura que la imagen cubra la pantalla */
-    background-attachment: fixed; /* Fija el fondo para evitar que se mueva con el scroll */
-    background-position: center center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repeticiones */
+    background-size: cover; 
+    background-attachment: fixed; /* CON ESTO LO FIO */
+    background-position: center center; 
+    background-repeat: no-repeat; 
     animation: cambioFondo 12s infinite;
     color: white;
 }
 
-/* Keyframes para cambiar las imágenes */
+/* CON ESTO SE DEBERÍAN CAMBIAR LAS IMÁGENES */
 @keyframes cambioFondo {
     0% { background-image: url('../img/fondo1.jpg'); }
     25% { background-image: url('../img/fondo2.jpg'); }
@@ -26,20 +25,20 @@ body {
     100% { background-image: url('../img/fondo1.jpg'); }
 }
 
-/* Contenedor principal para los ejercicios */
+
 .main-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
-    grid-template-rows: repeat(2, auto); /* Dos filas automáticas */
-    gap: 20px; /* Espacio entre los elementos */
-    width: 90%; /* Ancho del contenedor */
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centrado horizontal */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
-/* Estilo para cada ejercicio */
+
 .ejercicio {
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -47,10 +46,10 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Títulos de cada ejercicio */
+
 .ejercicio h2 {
     text-align: center;
     font-size: 24px;
@@ -58,14 +57,14 @@ body {
     color: #fff;
 }
 
-/* Reloj */
+
 .reloj {
     font-size: 36px;
     text-align: center;
     color: #fff;
 }
 
-/* Estilos para el mensaje */
+
 .mensaje {
     font-size: 18px;
     text-align: center;
@@ -73,14 +72,14 @@ body {
     padding: 10px;
 }
 
-/* Estilo para la fecha */
+
 .fecha {
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
 }
 
-/* Estilos para el generador de contraseñas */
+
 .contrasena-input {
     width: 100%;
     padding: 10px;
@@ -93,7 +92,7 @@ body {
 .contrasena-btn {
     width: 100%;
     padding: 10px;
-    background-color: #7B68EE; /* Color morado pastel */
+    background-color: #7B68EE; 
     color: white;
     font-size: 18px;
     border: none;
@@ -102,7 +101,7 @@ body {
 }
 
 .contrasena-btn:hover {
-    background-color: #9370DB; /* Morado más claro */
+    background-color: #9370DB; 
 }
 
 .contrasena-output {
@@ -112,10 +111,10 @@ body {
     color: #fff;
 }
 
-/* Estilos para el generador de links */
+
 .links-input {
     display: flex;
-    align-items: flex-start; /* Alinea los elementos al inicio horizontalmente */
+    align-items: flex-start; 
     padding: 10px;
     height: 100%; 
     border: 1px solid #ccc;
@@ -124,7 +123,7 @@ body {
 .links-btn {
     width: 100%;
     padding: 10px;
-    background-color: #FF69B4; /* Color rosa pastel */
+    background-color: #FF69B4; 
     color: white;
     font-size: 18px;
     border: none;
@@ -133,7 +132,7 @@ body {
 }
 
 .links-btn:hover {
-    background-color: #FFB6C1; /* Rosa más claro */
+    background-color: #FFB6C1; 
 }
 
 .links-list {
@@ -149,13 +148,13 @@ body {
     color: white;
 }
 
-/* Estilo general de la estación meteorológica */
+
 #climaActual, #previsionClima {
     margin: 20px;
     padding: 20px;
     border: 2px solid #ddd;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 #climaActual h2 {
@@ -163,7 +162,7 @@ body {
     font-weight: bold;
 }
 
-/* Estilo para los datos actuales */
+
 .datos-actuales {
     display: flex;
     align-items: center;
@@ -191,7 +190,7 @@ ul li {
 /* Estilo de la previsión por horas */
 #previsionClima li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
     overflow-x: auto;/* INTENTO DE PONERLO EN HORIZONTAL */
 }
